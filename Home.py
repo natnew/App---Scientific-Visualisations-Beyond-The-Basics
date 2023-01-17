@@ -49,10 +49,12 @@ with tab2:
     
 ##########################
 
-st.caption('An interactive graph taken from the Streamlit library.')
+st.caption('An interactive graph taken from the Streamlit library. This bubble graph shows the correlation between GDP per capita and life expectancy across five continents. This information was taken from the [Our World](https://ourworldindata.org/charts) webpage. (Updated 2023).')
 
 st.subheader("Choosing The Right Graph")
-st.markdown("Several online tools and resources assist you with selecting the right tool. CHARTIO provides a blog post describing the different chart types. Yan Holtz has a detailed website called The Python Graph Library, where graphs have been categorised based on their function. CodeAcademy has a blog containing a diagram that you can use to assist you when selecting a graph. You may also explore Visual Vocabulary, an interactive web app that makes chart selection much easier.")
+st.markdown("Several online tools and resources assist you with selecting the right tool. [CHARTI](https://chartio.com/learn/charts/essential-chart-types-for-data-visualization/) provides a blog post describing the different chart types. Yan Holtz has a detailed website called The Python Graph Library, where graphs have been categorised based on their function. CodeAcademy has a blog containing a diagram that you can use to assist you when selecting a graph. You may also explore [Visual Vocabulary](http://ft-interactive.github.io/visual-vocabulary/), an interactive web app that makes chart selection much easier.")
 
 st.subheader("What Can Space Tell Us About Life On Earth?")
-st.markdown("The data visualisations in this app aim to give you an insight into how space can improve life on Earth. We will use the interactive Plotly Library due to its seamless integration with many applications and beautiful visualisations. ")
+st.markdown("The data visualisations in this app aim to give you an insight into how space can improve life on Earth. We will use the interactive [Plotly Library](https://plotly.com/python/) due to its seamless integration with many applications and beautiful visualisations. ")
+st.markdown("Note: This is a proof-of-concept app. Use at your own discretion.")
+st.markdown("Reach out to me on [LinkedIn](https://www.linkedin.com/in/natasha-newbold/)")
