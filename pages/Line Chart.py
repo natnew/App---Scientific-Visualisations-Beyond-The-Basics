@@ -49,7 +49,7 @@ import streamlit as st
 number = st.number_input('Insert a number')
 st.write('The current number of moons orbiting your planet is ', number)
 
-st.caption("This [line chart](https://en.wikipedia.org/wiki/Line_chart) shows the increase in life expectancy between 1950 and 2010 across the two countries. The countries are Australia and New Zealand. This information came from the [Our World](https://ourworldindata.org/charts) webpage. (Updated 2023)")
+st.caption("This [line chart](https://en.wikipedia.org/wiki/Line_chart) shows the increase in life expectancy between 1950 and 2010 across the two decades. The countries are Australia and New Zealand. This information came from the [Our World](https://ourworldindata.org/charts) webpage. (Updated 2023)")
 
 #########################################
 
