@@ -45,7 +45,7 @@ import streamlit as st
 title = st.text_input('Name your own planet', 'Venus')
 st.write('Your planet is called', title)
 
-
+st.caption("This [heatmap](https://en.wikipedia.org/wiki/Heat_map) shows each planet's atmospheric composition during different times of the day and week. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 
 ##########################################
 
@@ -80,6 +80,8 @@ def get_chart_54456624():
         st.plotly_chart(fig, theme=None)
         
 get_chart_54456624()
+
+st.caption("This [heatmap](https://en.wikipedia.org/wiki/Heat_map) shows each planet's atmospheric composition during different times of the day, week and year. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 
 #########################################      
 
