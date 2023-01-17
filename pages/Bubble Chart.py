@@ -60,6 +60,8 @@ elif planet == 'Jupiter':
         st.write('You selected Jupiter. Did you know **"Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet\'s Great Red spot is a centuries-old storm bigger than Earth."**- Nasa, 2022' )
 else:
     st.write("You didn\'t select a planet.")
+    
+st.caption("This [bubble chart](https://en.wikipedia.org/wiki/Bubble_chart) shows the planet's distance from the Sun. The planets listed are Mercury, Venus, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023).")
 
 #######################################
 
@@ -78,6 +80,8 @@ def get_chart_19077817():
             )
     )])
     
+#size=[15, 30, 55, 70, 90, 110],
+    
     fig.update_layout(title_text='Solar Exploration: Earth Days')
 
 
@@ -88,8 +92,7 @@ def get_chart_19077817():
         st.plotly_chart(fig, theme=None)
 get_chart_19077817()
 
-
-
+st.caption("Using a gradient colour scheme, this [bubble chart](https://en.wikipedia.org/wiki/Bubble_chart) shows the planet's distance from the Sun. The planets listed are Mercury, Venus, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023).")
 #######################################
 
 
