@@ -38,7 +38,7 @@ def get_chart_81583906():
         marker_color=colors # marker color can be a single color value or an iterable
     )])
     
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Earth Days Per Planet')
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     with tab1:
@@ -85,7 +85,7 @@ def get_chart_68279038():
     ))
 
     # Here we modify the tickangle of the xaxis, resulting in rotated labels.
-    fig.update_layout(barmode='group', xaxis_tickangle=-45, title_text='Elements')
+    fig.update_layout(barmode='group', xaxis_tickangle=-45, title_text='Solar Exploration: Elements Per Planet')
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     with tab1:
