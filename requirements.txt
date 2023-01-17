@@ -7,7 +7,6 @@ plotly
 numpy
 datetime
 pandas
-plotly.figure_factory
 scipy
 
 
