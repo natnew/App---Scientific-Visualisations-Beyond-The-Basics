@@ -42,7 +42,7 @@ def get_chart_78288066():
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Surface Structure Change')
     
     with tab1:
         st.plotly_chart(fig, theme="streamlit")
@@ -88,7 +88,7 @@ def get_chart_86765810():
         hovertemplate="%{y}%{_xother}"
     ))
 
-    fig.update_layout(hovermode="x unified")
+    fig.update_layout(hovermode="x unified", title_text='Solar Exploration: Surface Structure Change')
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     with tab1:
