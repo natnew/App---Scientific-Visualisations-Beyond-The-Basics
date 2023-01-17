@@ -1,1 +1,1 @@
-# App---Scientific-Visualisations-Beyond-The-Basics
+# App-Scientific-Visualisations-Beyond-The-Basics
