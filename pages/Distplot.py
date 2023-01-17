@@ -37,7 +37,7 @@ def get_chart_66135393():
                              bin_size=.2, show_rug=False)
 
     # Add title
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Robotic Transmittals')
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     with tab1:
@@ -79,7 +79,7 @@ def get_chart_43764040():
     fig = ff.create_distplot(hist_data, group_labels, show_hist=False, colors=colors)
 
     # Add title
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Robotic Transmittals')
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     with tab1:
