@@ -24,7 +24,8 @@ def get_chart_98774632():
     import plotly.graph_objects as go
 
     fig = go.Figure(data=[go.Scatter(
-        x=[1, 2, 3, 4], y=[10, 11, 12, 13],
+        x=['Mercury', 'Venus',
+           'Mars', 'Jupiter'], y=[10, 11, 12, 13],
         mode='markers',
         
         marker=dict(
@@ -32,7 +33,7 @@ def get_chart_98774632():
         size=[40, 60, 80, 100])
     )])
     
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Distance From The Sun')
 
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
@@ -70,19 +71,20 @@ def get_chart_19077817():
     import plotly.graph_objects as go
 
     fig = go.Figure(data=[go.Scatter(
-        x=[1, 3.2, 5.4, 7.6, 9.8, 12.5],
+        x=['Mercury', 'Venus', 'Earth',
+           'Mars', 'Jupiter', ' Saturn'],
         y=[1, 3.2, 5.4, 7.6, 9.8, 12.5],
         mode='markers',
         marker=dict(
             color=[120, 125, 130, 135, 140, 145],
-            size=[15, 30, 55, 70, 90, 110],
+            size=[15, 30, 55, 70, 85, 100],
             showscale=True
             )
     )])
     
 #size=[15, 30, 55, 70, 90, 110],
     
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Distance From The Sun')
 
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
