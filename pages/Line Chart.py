@@ -49,6 +49,7 @@ import streamlit as st
 number = st.number_input('Insert a number')
 st.write('The current number of moons orbiting your planet is ', number)
 
+st.caption("This [line chart](https://en.wikipedia.org/wiki/Line_chart) shows the increase in life expectancy between 1950 and 2010 across the two countries. The countries are Australia and New Zealand. This information came from the [Our World](https://ourworldindata.org/charts) webpage. (Updated 2023)")
 
 #########################################
 
@@ -78,6 +79,7 @@ def get_chart_42947925():
 
     fig.update_traces(hoverinfo='text+name', mode='lines+markers')
     fig.update_layout(legend=dict(y=0.5, traceorder='reversed', font_size=16))
+    fig.update_layout(title_text='Solar Exploration: Earth Days')
 
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
@@ -88,6 +90,7 @@ def get_chart_42947925():
 
 get_chart_42947925()
 
+st.caption("This [line chart](https://en.wikipedia.org/wiki/Line_chart) shows each planet's magnetic field relative to the planet's equator across the last four centuries. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 
 ######################################### 
 
