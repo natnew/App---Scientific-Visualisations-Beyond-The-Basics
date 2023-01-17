@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan 16 20:28:25 2023
+Created on Mon Jan 16 20:27:48 2023
 
 @author: NatashaNewbold
 """
@@ -19,75 +19,82 @@ st.subheader('A gallary of data visualisations using Python.')
 ######################################
 
 @st.experimental_memo
-def get_chart_37340223():
-    import plotly.graph_objects as go
+def get_chart_66135393():
+    import plotly.figure_factory as ff
+    import numpy as np
 
-    fig = go.Figure(data=go.Heatmap(
-                       z=[[1, None, 30, 50, 1], [20, 1, 60, 80, 30], [30, 60, 1, -10, 20]],
-                       x=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                       y=['Morning', 'Afternoon', 'Evening'],
-                       hoverongaps = False, colorscale = 'Blues'))
+    x1 = np.random.randn(200) - 2
+    x2 = np.random.randn(200)
+    x3 = np.random.randn(200) + 2
+
+    hist_data = [x1, x2, x3]
+
+    group_labels = ['Venus', 'Mercury', 'Mars']
+    colors = ['rgb(93, 164, 214)', '#A6ACEC', '#63F5EF']
+
+    # Create distplot with curve_type set to 'normal'
+    fig = ff.create_distplot(hist_data, group_labels, colors=colors,
+                             bin_size=.2, show_rug=False)
+
+    # Add title
+    fig.update_layout(title_text='Solar Exploration: Robotic Transmittals')
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
-    fig.update_layout(title_text='Solar Exploration: Atmospheric Composition')
-    
     with tab1:
         st.plotly_chart(fig, theme="streamlit")
     with tab2:
         st.plotly_chart(fig, theme=None)
         
-get_chart_37340223()        
-        
-#########################################  
+
+get_chart_66135393()        
+##########################################  
 
 import streamlit as st
 
-title = st.text_input('Name your own planet', 'Venus')
-st.write('Your planet is called', title)
+if st.button('Tell me something about the Sun.'):
+    st.write('The Sun is nearly 4.5 billion years old.')
+else:
+    st.write('Our solar system is amazing!')
 
-st.caption("This [heatmap](https://en.wikipedia.org/wiki/Heat_map) shows each planet's atmospheric composition during different times of the day and week. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
+
+st.caption("This [distplot](https://en.wikipedia.org/wiki/Normal_distribution) shows transmittals from a robotic geologist. The planets listed are Mars, Venus and Mercury. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 
 ##########################################
 
 @st.experimental_memo
-def get_chart_54456624():
-    import plotly.graph_objects as go
-    import datetime
+def get_chart_43764040():
+    import plotly.figure_factory as ff
     import numpy as np
-    np.random.seed(1)
 
-    programmers = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+    x1 = np.random.randn(200) - 1
+    x2 = np.random.randn(200)
+    x3 = np.random.randn(200) + 1
 
-    base = datetime.datetime.today()
-    dates = base - np.arange(180) * datetime.timedelta(days=1)
-    z = np.random.poisson(size=(len(programmers), len(dates)))
+    hist_data = [x1, x2, x3]
 
-    fig = go.Figure(data=go.Heatmap(
-            z=z,
-            x=dates,
-            y=programmers,
-            colorscale='Blues'))
+    group_labels = ['Venus', 'Murcury', 'Mars']
+    colors = ['rgb(93, 164, 214)', '#37AA9C', '#94F3E4']
 
-    fig.update_layout(
-        title='Solar Exploration: Atmospheric Composition',
-        xaxis_nticks=36)
+    # Create distplot with curve_type set to 'normal'
+    fig = ff.create_distplot(hist_data, group_labels, show_hist=False, colors=colors)
 
+    # Add title
+    fig.update_layout(title_text='Solar Exploration: Robotic Transmittals')
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     with tab1:
         st.plotly_chart(fig, theme="streamlit")
     with tab2:
         st.plotly_chart(fig, theme=None)
-        
-get_chart_54456624()
 
-st.caption("This [heatmap](https://en.wikipedia.org/wiki/Heat_map) shows each planet's atmospheric composition during different times of the day, week and year. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
+get_chart_43764040()
 
-#########################################      
+st.caption("This [distplot](https://en.wikipedia.org/wiki/Normal_distribution) shows transmittals from a robotic geologist. The planets listed are Mars, Venus and Mercury. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
+##########################################      
 
 
-st.subheader('Bar Chart with Plotly')
-st.markdown('**Function:** Showing hierarchy or correlation.')
+st.subheader('Distplot with Plotly')
+st.markdown('**Function:** Compare values.')
 st.markdown('**Function:** Understand relationships.')
-st.markdown('**Charts in the same category:** Scatterplot, Line-Column, Scatterplot Connected, Bubble Chart, XY-Heatmap')
-st.markdown('**Example:** Elements & Life Expectancy')
+st.markdown('**Charts in the same category:** Histogram, Boxplot, Violin, Dot Plot, Barcode, Cumulative Curvep')
+st.markdown('**Example:** Elements distribution')
