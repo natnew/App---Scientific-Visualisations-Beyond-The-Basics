@@ -1,4 +1,4 @@
-[![Open in Streamlit](https://natnew-app---scientific-visualisations-beyond-the-b-home-sry8wj.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://natnew-app---scientific-visualisations-beyond-the-b-home-sry8wj.streamlit.app/)
 
 # App-Scientific-Visualisations-Beyond-The-Basics
 
