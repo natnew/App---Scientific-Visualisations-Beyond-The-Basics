@@ -57,7 +57,7 @@ col3.metric("Earth", "365d")
 col4.metric("Mars", "1.88y")
 col5.metric("Jupiter", "11.86y")
 
-
+st.caption("This [bar chart](https://en.wikipedia.org/wiki/Bar_chart) shows the length of a year for each planet. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023).")
 
 ###########################
 
@@ -94,6 +94,8 @@ def get_chart_68279038():
         st.plotly_chart(fig, theme=None)
 
 get_chart_68279038()
+
+st.caption("This [bar chart](https://en.wikipedia.org/wiki/Bar_chart) shows the two most abundant elements for each planet. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023).")
 
 ##############################################
 
