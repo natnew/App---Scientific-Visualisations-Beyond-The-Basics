@@ -29,7 +29,7 @@ def get_chart_37340223():
                        hoverongaps = False, colorscale = 'Blues'))
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Atmospheric Composition')
     
     with tab1:
         st.plotly_chart(fig, theme="streamlit")
@@ -69,7 +69,7 @@ def get_chart_54456624():
             colorscale='Blues'))
 
     fig.update_layout(
-        title='Solar Exploration: Earth Days',
+        title='Solar Exploration: Atmospheric Composition',
         xaxis_nticks=36)
 
 
