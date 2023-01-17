@@ -29,7 +29,7 @@ def get_chart_66135393():
 
     hist_data = [x1, x2, x3]
 
-    group_labels = ['Venus', 'Earth', 'Mars']
+    group_labels = ['Venus', 'Mercury', 'Mars']
     colors = ['rgb(93, 164, 214)', '#A6ACEC', '#63F5EF']
 
     # Create distplot with curve_type set to 'normal'
@@ -57,7 +57,7 @@ else:
     st.write('Our solar system is amazing!')
 
 
-
+st.caption("This [distplot](https://en.wikipedia.org/wiki/Normal_distribution) shows transmittals from a robotic geologist. The planets listed are Mars, Venus and Mercury. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 
 ##########################################
 
@@ -72,7 +72,7 @@ def get_chart_43764040():
 
     hist_data = [x1, x2, x3]
 
-    group_labels = ['Venus', 'Earth', 'Mars']
+    group_labels = ['Venus', 'Murcury', 'Mars']
     colors = ['rgb(93, 164, 214)', '#37AA9C', '#94F3E4']
 
     # Create distplot with curve_type set to 'normal'
@@ -88,6 +88,8 @@ def get_chart_43764040():
         st.plotly_chart(fig, theme=None)
 
 get_chart_43764040()
+
+st.caption("This [distplot](https://en.wikipedia.org/wiki/Normal_distribution) shows transmittals from a robotic geologist. The planets listed are Mars, Venus and Mercury. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 ##########################################      
 
 
