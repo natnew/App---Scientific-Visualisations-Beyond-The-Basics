@@ -32,7 +32,7 @@ def get_chart_51048942():
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
     
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Life Expectancy Between 1950 And 2010')
     
     with tab1:
         st.plotly_chart(fig, theme="streamlit")
@@ -79,7 +79,7 @@ def get_chart_42947925():
 
     fig.update_traces(hoverinfo='text+name', mode='lines+markers')
     fig.update_layout(legend=dict(y=0.5, traceorder='reversed', font_size=16))
-    fig.update_layout(title_text='Solar Exploration: Earth Days')
+    fig.update_layout(title_text='Solar Exploration: Magnetic Field ')
 
 
     tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
