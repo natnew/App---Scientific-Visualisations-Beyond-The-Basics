@@ -58,6 +58,7 @@ import streamlit as st
 t = st.time_input('Set an alarm for', datetime.time(8, 45))
 st.write('Your spaceship alarm is set for', t)
 
+st.caption("This [time series graph](https://en.wikipedia.org/wiki/Time_series) shows the change in surface structure over a year. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 
 ######################################### 
 
@@ -98,6 +99,7 @@ def get_chart_86765810():
 
 get_chart_86765810()
 
+st.caption("This [time series graph](https://en.wikipedia.org/wiki/Time_series) shows the change in surface structure over a year. The planets listed are Mercury, Venus, Earth, Mars and Jupiter. This information came from the [NASA](https://solarsystem.nasa.gov/planets/mercury/overview/) solar system webpage. (Updated 2023)")
 
 ######################################### 
 
